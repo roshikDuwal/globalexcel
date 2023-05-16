@@ -1,0 +1,164 @@
+
+
+
+/* <----------Header Section----------->  */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+header nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    width: 20rem;
+}
+
+header nav ul{
+    display: flex;
+    gap: 3rem;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+}
+
+header nav ul li a:focus{
+    color: var(--theme-color) !important; 
+}
+
+header nav ul li a:hover,header nav ul li a:active{
+    color: var(--theme-color);
+}
+
+
+header .content{
+    position: absolute;
+    text-align: start;
+    left: 7rem;
+    top: 16rem;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 7rem;
+    width: 52%;
+    margin-top: 3rem;
+}
+
+header .content h1{
+    color: var(--white);
+    text-align: start;
+    line-height: 120%;
+    margin-bottom: 3rem;
+
+
+}
+
+header .content h1 span{
+    color: var(--theme-color);
+    font-size: 6rem !important;
+    font-weight: 900 !important;
+}
+
+header .content p{
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+
+header .content a{
+    text-decoration: none;
+    color: var(--white);
+    background-color:var(--btn-bg) ;
+    border: var(--btn-bg) 0.5px solid;
+    padding: 1.25rem 1.75rem;
+    font-size: 1.69rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: all 0.5s linear;
+    text-transform: capitalize;
+}
+
+header .content a:hover{
+    background-color:var(--btn-bg-hover) ;
+}
+
+
+
+
+
+/* --------------scrollbar------------ */
+
+::-webkit-scrollbar{
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(141, 141, 141) ;
+    border-radius: 1rem;
+    border: .1px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(105, 104, 104);
+}
+
+
+
+

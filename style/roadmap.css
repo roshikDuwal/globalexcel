@@ -1,0 +1,81 @@
+.roadmap{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10rem 0;
+}
+
+.roadmap .heading{
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.roadmap .heading p{
+    color: #3692b9;
+}
+
+.roadmap .heading h2{
+    text-transform: capitalize ;
+    font-weight: 900;
+}
+
+.grid{
+    display: grid;
+    width: 70%;
+}
+
+.grid-column-2{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.phase .box1{
+   text-align: center;
+   padding: 0 1rem 1rem 1rem;
+}
+
+.phase .midline{
+    border: none;
+    border-right: 1px solid #3692b9;
+    position: relative;
+
+}
+
+.phase .midline:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 98.5%;
+    width: 17px;
+    height: 17px;
+    background-color: #3692b9;
+    border-radius: 50%;
+}
+
+.phase .box1 h2{
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.phase .box1 p{
+    color: #999;
+    font-weight: 500;
+}
+
+.phase .box2 h2{
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.phase .box2 p{
+    color: #999;
+    font-weight: 500;
+}
+
+

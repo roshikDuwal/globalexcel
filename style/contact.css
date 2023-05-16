@@ -1,0 +1,52 @@
+.title-header{
+    text-align: center;    
+}
+
+.title-header p{
+    color: #0071b2;
+    text-transform: uppercase;
+}
+
+.title-header h2{
+    font-size: 3.5rem !important;
+}
+
+.box{
+    margin: 5rem auto;
+    width: 80%;
+}
+
+.text-input input{
+    border-bottom: 1px solid black !important;
+}
+
+.text-input textarea{
+    border-bottom: 1px solid black !important;
+}
+
+.text-input input::placeholder{
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+.text-input input{
+    margin: 1rem 0;
+}
+
+.text-input .padding{
+    padding-left: 2rem !important;
+}
+
+.align{
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    width: 70%;
+}
+
+label{
+    margin: 2rem 0;
+}
+
