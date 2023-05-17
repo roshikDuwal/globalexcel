@@ -41,6 +41,13 @@
         pointer-events: none;
     }
 
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
     header nav ul li {
         padding: 1rem 1rem 1rem 0  !important;
     }
@@ -81,13 +88,6 @@
 
     }
 
-    .active .navbar {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-
     .navbar ul li {
         text-align: center;
         width: 100%;
@@ -108,7 +108,6 @@
         display: block;
         color: white !important;
     }
-
 
 
     /* -------------dropdown-------------------- */
@@ -222,6 +221,13 @@
         pointer-events: none;
     }
 
+    .active .index-res {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
     
     .index-res li {
         display: flex;
@@ -246,10 +252,34 @@
         gap: 2rem;
     }
 
-    .index-res .about-dropdown{
-        padding: 1rem !important;
+    header nav .index-res li .about-dropdown{
+        position: relative;
+        z-index: 999;
+        top: 0 !important;
+        right: 0 !important;
+        display: none;
+        background-color: black;
+        border-top: 2px solid white;
     }
     
+    header nav .index-res li:hover>.about-dropdown {
+        display: block;
+    }
+
+    header nav .index-res li .roadmap-dropdown{
+        position: relative;
+        z-index: 999;
+        top: 0 !important;
+        right: 0 !important;
+        display: none;
+        background-color: black;
+        border-top: 2px solid white;
+    }
+    
+    header nav .index-res li:hover>.roadmap-dropdown {
+        display: block;
+    }
+
     .index-res .roadmap-dropdown{
         padding: 1rem !important;
     }
@@ -274,13 +304,7 @@
         cursor: pointer;
     }
 
-    .active .index-res {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
 
-    }
 
 
     .active .mobile-home-navbar-btn .mobile-home-nav-icon[name="menu-outline"] {
