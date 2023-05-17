@@ -15,7 +15,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 1rem 5%;
+    padding: 0 5%;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -24,22 +24,22 @@
 
 header nav ul {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 header nav ul li {
     list-style: none;
     display: inline-block;
-
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--black) !important;
     font-size: 1.4rem;
     font-weight: 400;
     transition: all 0.5s linear;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 header nav ul li a:focus,
@@ -63,6 +63,140 @@ header .content {
     width: 52%;
     margin-top: 3rem;
 }
+
+
+/* -----------dropdown Section--------- */
+
+header nav ul li {
+    padding: 4rem 0;
+ 
+}
+
+header nav ul li .about-dropdown {
+    position: absolute;
+    z-index: 999;
+    top: 10.8rem;
+    right: 72rem;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    transition: all 0.1s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    border-top: 4px solid rgb(243, 242, 242);
+    background-color: #222222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom-right-radius: 30px 10px;
+    border-bottom-left-radius: 10px 30px;
+    padding: 2rem !important;
+}
+
+
+
+header nav ul li:hover>.about-dropdown {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header nav ul li .about-dropdown li {
+    width: 100%;
+    text-align: start;
+    margin: 0.5rem 0.5rem;
+    padding: 0 !important;
+
+}
+
+header nav ul li .about-dropdown li a {
+    color: rgb(203, 202, 202) !important;
+    text-transform: capitalize !important;
+    transition: all 0.3s linear;
+}
+
+header nav ul li .about-dropdown li a:hover {
+    color: white !important;
+    padding-left: 3px;
+}
+
+header nav ul li .roadmap-dropdown {
+    position: absolute;
+    z-index: 999;
+    top: 10.8rem;
+    right: 59rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    transition: all 0.1s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    border-top: 4px solid rgb(243, 242, 242);
+    background-color: #222222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom-right-radius: 30px 10px;
+    border-bottom-left-radius: 10px 30px;
+    padding: 2rem !important;
+}
+
+header nav ul li:hover>.roadmap-dropdown {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header nav ul li .roadmap-dropdown li {
+    width: 100%;
+    text-align: start;
+    margin: 0.5rem 0.5rem;
+    padding: 0 !important;
+}
+
+header nav ul li .roadmap-dropdown li a {
+    color: rgb(203, 202, 202) !important;
+    text-transform: capitalize !important;
+    transition: all 0.3s linear;
+}
+
+header nav ul li .roadmap-dropdown li a:hover {
+    color: white !important;
+    padding-left: 3px;
+}
+
+
+
+/* ----line hover-----  */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px !important;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
 
 
 /* --------------scrollbar------------ */
@@ -94,4 +228,10 @@ header .content {
 /* ----------maintenance------- */
 body .site-main>.ttm-row:first-child {
     margin-top: -60px !important;
+}
+
+
+.scrollremove{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
