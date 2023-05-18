@@ -90,7 +90,7 @@ header .content{
     position: absolute;
     text-align: start;
     left: 7rem;
-    top: 16rem;
+    top: 10rem;
     text-transform: capitalize;
     display: inline-block;
     padding: 7rem;
@@ -143,11 +143,11 @@ header nav ul li{
     padding:3rem 0 ;
 }
 
-header nav .index-res li .about-dropdown{
+ .index-res li .about-dropdown{
     position: absolute;
     z-index: 999;
     top: 8.5rem;
-    right: 45rem;
+    right: 45rem !important;
     width: 190px;
     display: flex;
     flex-direction: column;
@@ -167,13 +167,13 @@ header nav .index-res li .about-dropdown{
 
 
 
-header nav .index-res li:hover>.about-dropdown{
+ .index-res li:hover>.about-dropdown{
    visibility: visible;
    opacity: 1;
    pointer-events: auto;
 }
 
-header nav .index-res li .about-dropdown li{
+ .index-res li .about-dropdown li{
     width: 100%;
     text-align: start;
     margin: 0.5rem 0.5rem;
@@ -181,13 +181,13 @@ header nav .index-res li .about-dropdown li{
 
 }
 
-header nav .index-res li .about-dropdown li a{
+ .index-res li .about-dropdown li a{
     color: rgb(237, 236, 236) !important;
     text-transform: capitalize !important;
     transition: all 0.3s linear;
 }
 
-header nav .index-res li .about-dropdown li a:hover{
+ .index-res li .about-dropdown li a:hover{
     color: white !important;
     padding-left: 3px;
 }
@@ -196,7 +196,7 @@ header nav .index-res li .roadmap-dropdown{
     position: absolute;
     z-index: 999;
     top: 8.5rem;
-    right: 30rem;
+    right: 30rem !important;
     width: 200px;
     display: flex;
     flex-direction: column;

@@ -16,7 +16,7 @@
         position: relative;
     }
 
-    .blur{
+    .blur {
         filter: blur(1.5px);
     }
 
@@ -25,7 +25,7 @@
     .head .navbar {
         width: 50%;
         height: 100vh;
-        background-color: rgba(0,0,0,.97);
+        background-color: rgba(0, 0, 0, .97);
         position: absolute;
         top: 0;
         left: 50%;
@@ -49,7 +49,7 @@
     }
 
     header nav ul li {
-        padding: 1rem 1rem 1rem 0  !important;
+        padding: 1rem 1rem 1rem 0 !important;
     }
 
     .navbar-lists {
@@ -135,7 +135,7 @@
         text-align: start;
         margin: 0.5rem 0.5rem;
         padding: 0 !important;
-        border:none !important;
+        border: none !important;
         border-radius: none;
     }
 
@@ -169,7 +169,7 @@
         text-align: start;
         margin: 0.5rem 0.5rem;
         padding: 0 !important;
-        border:none !important;
+        border: none !important;
         border-radius: none;
     }
 
@@ -202,14 +202,14 @@
     .index-res {
         width: 100%;
         height: 100vh;
-        background-color: rgba(0,0,0,.97);
+        background-color: rgba(0, 0, 0, .97);
         position: absolute;
         top: 0;
         left: 50%;
         z-index: 999;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 1rem;
         padding-top: 15rem;
@@ -228,17 +228,17 @@
         pointer-events: auto;
     }
 
-    
+
     .index-res li {
         display: flex;
         flex-direction: column;
         text-align: start;
         width: 32%;
         color: rgb(203, 202, 202) !important;
-        border-bottom: 1px solid rgb(75, 74, 74) ;
+        border-bottom: 1px solid rgb(75, 74, 74);
     }
 
-    .index-res li a{
+    .index-res li a {
         color: rgb(194, 193, 193) !important;
     }
 
@@ -252,7 +252,7 @@
         gap: 2rem;
     }
 
-    header nav .index-res li .about-dropdown{
+    header nav .index-res li .about-dropdown {
         position: relative;
         z-index: 999;
         top: 0 !important;
@@ -261,12 +261,12 @@
         background-color: black;
         border-top: 2px solid white;
     }
-    
+
     header nav .index-res li:hover>.about-dropdown {
         display: block;
     }
 
-    header nav .index-res li .roadmap-dropdown{
+    header nav .index-res li .roadmap-dropdown {
         position: relative;
         z-index: 999;
         top: 0 !important;
@@ -275,19 +275,20 @@
         background-color: black;
         border-top: 2px solid white;
     }
-    
+
     header nav .index-res li:hover>.roadmap-dropdown {
         display: block;
     }
 
-    .index-res .roadmap-dropdown{
+    .index-res .roadmap-dropdown {
         padding: 1rem !important;
     }
-    .index-res .about-dropdown li{
+
+    .index-res .about-dropdown li {
         margin: 1.5rem !important;
     }
 
-    .index-res .roadmap-dropdown li{
+    .index-res .roadmap-dropdown li {
         margin: 1.5rem !important;
     }
 
@@ -317,10 +318,77 @@
 }
 
 
+/* ---------------------------CONTENT INDEX---------------------- */
+
+@media(max-width:1195px) {
+    .header .content {
+        width: 80%;
+    }
+}
+
+@media(max-width:753px) {
+    .header .content {
+        width: 70%;
+    }
+}
 
 
 
-/* -----------dropdown------------ */
+
+
+@media(max-width:590px) {
+    .header .content {
+        width: 95%;
+        left: 2rem;
+    }
+
+    header .content h1 {
+        font-size: 3rem !important;
+    }
+
+    header .content h1 span {
+        font-size: 3.5rem !important;
+    }
+
+    header .content p {
+        font-size: 1.1rem;
+    }
+
+    .index-res{
+        left: 30%;
+    }
+    .index-res li{
+        width: 50%;
+    }
+}
+
+@media(max-width:391px) {
+    .index-res{
+        left: 10%;
+    }
+
+    .index-res li{
+        width: 50%;
+    }
+
+}
+
+@media(max-width:290px) {
+    .index-res{
+        left: 10%;
+    }
+
+    .index-res li{
+        width: 70%;
+    }
+
+}
+
+
+
+
+
+/* -----------dropdown------------
 @media (max-width:1450px) {
     header nav ul li .about-dropdown {
         right: 66rem;
@@ -330,9 +398,6 @@
         right: 50rem;
     }
 
-    .index-res .about-dropdown{
-        right: 46rem;
-    }
 }
 
 @media (max-width:1323px) {
@@ -360,4 +425,4 @@
     header nav ul li .roadmap-dropdown {
         right: 35rem;
     }
-}
+} */
