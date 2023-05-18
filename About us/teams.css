@@ -1,0 +1,28 @@
+
+
+/* -----------team section-------------- */
+.team-row{
+    margin-bottom: 10rem;
+}
+
+.team-row div{
+    text-align: center;
+}
+
+.team-row div .team-box .title-header h1 {
+    font-size: 5rem;
+}
+
+.team-row div .team-box .title-header h1 span{
+    font-size: 6rem;
+   color: #0071b2;
+}
+
+.team-row div .team-box .title-header p{
+    font-size: 2rem;
+
+}
+
+.featureteams-box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}

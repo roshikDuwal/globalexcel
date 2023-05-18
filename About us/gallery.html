@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Excel</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="/style/roadmap.css">
-    <link rel="stylesheet" href="./style/about.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,14 +22,16 @@
     <link rel="stylesheet" href="../style/about.css">
     <link rel="stylesheet" href="../style/responsive.css">
     <link rel="stylesheet" href="../style/main.css">
-    <script defer src="../js/navbar.js"></script>
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="./teams.css">
 
+    <script defer src="../js/navbar.js"></script>
 
     <!-- REVOLUTION LAYERS STYLES -->
 
     <link rel="stylesheet" type="text/css" href="../project/css/layers.css">
 
-    <link rel="stylesheet" type="text/css" href="../project/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="..project/css/settings.css">
 
 
     <!-- bootstrap -->
@@ -64,7 +65,6 @@
     <!-- shortcodes -->
     <link rel="stylesheet" type="text/css" href="../project/css/shortcodes.css" />
 
-
     <!-- main -->
     <link rel="stylesheet" type="text/css" href="../project/css/main.css" />
 
@@ -74,165 +74,117 @@
 
 <body class="body">
     <!-- <--------Header Section--------->
-        <header class="head  ">
-            <img src="/assets/logo.png" class="logo" alt="">
-            <nav class="navbar">
-                <ul class="navbar-lists">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a >ABOUT US</a>
-                        <ul class="about-dropdown">
-                            <li><a class="hover-underline-animation" href="../about.html">Global Excel</a></li>
-                            <li><a class="hover-underline-animation" href="../About us/teams.html">Teams</a></li>
-                            <li><a class="hover-underline-animation" href="../About us/gallery.html">Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li><a>ABROAD STUDY </a>
-                       
-                        <ul class="roadmap-dropdown">
-                            <li><a class="hover-underline-animation" href="../Roadmap/studyingermany.html">Study In Germany</a></li>
-                            <li><a class="hover-underline-animation" href="../Roadmap/studyinindia.html">Study in India</a>
-                            </li>
-                            <li><a class="hover-underline-animation" href="../Roadmap/studyinnepal.html">Study In Nepal</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="../registration.html">REGISTRATION</a></li>
-                    <li><a href="../contact.html">CONTACT US</a></li>
-                </ul>
-            </nav>
-    
-            <div class="mobile-navbar-btn">
-                <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-                <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-            </div>
-        </header>
-        <!-- ----------Header Section End------- -->
-    
-    
+    <header class="head  ">
+        <img src="/assets/logo.png" class="logo" alt="">
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a>ABOUT US</a>
+                    <ul class="about-dropdown">
+                        <li><a class="hover-underline-animation" href="../about.html">Global Excel</a></li>
+                        <li><a class="hover-underline-animation" href="../About us/teams.html">Teams</a></li>
+                        <li><a class="hover-underline-animation" href="../About us/gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a>ABROAD STUDY </a>
 
-<div class="page">
+                    <ul class="roadmap-dropdown">
+                        <li><a class="hover-underline-animation" href="../Roadmap/studyingermany.html">Study In
+                                Germany</a></li>
+                        <li><a class="hover-underline-animation" href="../Roadmap/studyinindia.html">Study in India</a>
+                        </li>
+                        <li><a class="hover-underline-animation" href="../Roadmap/studyinnepal.html">Study In Nepal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../registration.html">REGISTRATION</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    <!-- ----------Header Section End------- -->
 
 
-    <!-- page-title -->
-    <div class="ttm-page-title-row" style="display: flex; justify-content: center; align-items: center; height: 400px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-box ttm-textcolor-white">
-                        <div class="page-title-heading" style="  text-align: center !important
-                        ;">
-                            <h1>RoadMap To Germany</h1>
-                        </div><!-- /.page-title-captions -->
-                        <div class="breadcrumb-wrapper" style=" text-align: center !important
-                        ;">
-                            <span>
-                                <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
-                            </span>
-                            <span class="ttm-bread-sep">&nbsp; | &nbsp;</span>
-                            <span>Roadmap to germany</span>
+
+
+    <!--page start-->
+    <div class="page">
+        <!--header start-->
+        <header id="masthead" class="header ttm-header-style-classic">
+                <!-- team-section -->
+                <section class="ttm-row ttm-bg ttm-bgimage-yes bg-img3 team-section clearfix">
+                    <div class="container">
+                        <div class="team-row">       
+                            <div class="col-md-12 col-sm-12">
+                                <!-- section title -->
+                                <div class="team-box" >
+                                    <div class="title-header">
+                                        <h1> OUR GALLERY<h1>
+                                        <p class="title">Check our photos</p>
+                                    </div>
+                                </div><!-- section title end -->
+                            </div>
                         </div>
+                        <!-- row -->
+                        <div class=" gallery-row">
+                            <div class="gallery-box">
+                                <!-- featured-imagebox-team -->
+                                <div class="featured-imagebox featured-imagebox-team feature-box ">
+                                    <div class="featured-thumbnail gallerywidth">
+                                        <img class="img-fluid" src="../assets/6.png"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-content featured-content-team feature-box">
+                                        <div class="featured-title">
+                                            <h5><a href="./GalleryDetail/gallerydetail.html">Holi</a></h5>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox-team end-->
+                                <!-- featured-imagebox-team -->
+                                <div class="featured-imagebox featured-imagebox-team">
+                                    <div class="featured-thumbnail gallerywidth">
+                                        <img class="img-fluid" src="../assets/5.png"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-content featured-content-team feature-box">
+                                        <div class="featured-title">
+                                            <h5><a href="./GalleryDetail/gallerydetail.html">Annual Program </a></h5>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox-team end-->
+                                <!-- featured-imagebox-team -->
+                                <div class="featured-imagebox featured-imagebox-team">
+                                    <div class="featured-thumbnail gallerywidth">
+                                        <img class="img-fluid" src="../assets/5.png"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-content featured-content-team feature-box">
+                                        <div class="featured-title">
+                                            <h5><a href="./GalleryDetail/gallerydetail.html">Cultural Orientation</a></h5>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox-team end-->
+                                <div class="featured-imagebox featured-imagebox-team">
+                                    <div class="featured-thumbnail gallerywidth">
+                                        <img class="img-fluid" src="../assets/6.png"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-content featured-content-team feature-box">
+                                        <div class="featured-title">
+                                            <h5><a href="./GalleryDetail/gallerydetail.html">Graduation Program</a></h5>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox-team end-->
+                            </div>
+                        </div><!-- row end -->
                     </div>
-                </div><!-- /.col-md-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- page-title end-->
-
-
-
-    <!-- -------ROADMAP SECTION------- -->
-    <section class="roadmap">
-        <div class="heading">
-            <p>Step-by-step process</p>
-            <h2>From Germany</h2>
-        </div>
-        <div class="phase grid grid-column-2">
-            <div class="box1 midline">
-                <h2>1.Contact Global Excel</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-            <div class="box2">
-
-            </div>
-        </div>
-        <div class="phase grid grid-column-2">
-            <div class="box2 midline">
-
-            </div>
-            <div class="box1 ">
-                <h2>2. Select the skill development program.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-        </div>
-        <div class="phase grid grid-column-2">
-            <div class="box1 midline">
-                <h2>3. Skill Development for Employment (1-8 Months)</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-            <div class="box2">
-
-            </div>
-        </div>
-        <div class="phase grid grid-column-2">
-
-            <div class="box2 midline">
-
-            </div>
-            <div class="box1 ">
-                <h2>4. Take B1 German Language Test (8th Month)</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-        </div>
-        <div class="phase grid grid-column-2">
-            <div class="box1 midline">
-                <h2>5. Assistance for VISA</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-            <div class="box2 ">
-
-            </div>
-
-        </div>
-
-        <div class="phase grid grid-column-2">
-            <div class="box2 midline">
-
-            </div>
-            <div class="box1">
-                <h2>6. Get VISA and ﬂy to Germany</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-        </div>
-        <div class="phase grid grid-column-2">
-            <div class="box1 midline">
-                <h2>7. Further Training for B2 Level German and subsequent to which the candidates will begin their
-                    Vocational Training (Apprenticeship)</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dolorem! Blanditiis, velit?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Eum totam ab tempora tempore libero aperiam porro
-                    recusandae quos doloremque omnis.</p>
-            </div>
-            <div class="box2 ">
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
+                </section>
+                <!-- team-section end -->
 
         <!--footer start-->
         <footer class="footer widget-footer clearfix">
@@ -320,8 +272,33 @@
             </div>
         </footer>
         <!--footer end-->
-    </div>
+
+            <!--back-to-top start-->
+            <a id="totop" href="#top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+            <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+
+    <!-- Javascript -->
+
+    <script src="../project/js/jquery.min.js"></script>
+    <script src="../project/js/tether.min.js"></script>
+    <script src="../project/js/bootstrap.min.js"></script>
+    <script src="../project/js/jquery.easing.js"></script>
+    <script src="../project/js/jquery-waypoints.js"></script>
+    <script src="../project/js/jquery-validate.js"></script>
+    <script src="../project/js/owl.carousel.js"></script>
+    <script src="../project/js/jquery.prettyPhoto.js"></script>
+    <script src="../project/js/numinate.min6959.js?ver=4.9.3"></script>
+    <script src="../project/js/main.js"></script>
+    <script src="../project/js/chart.js"></script>
+
+    <!-- Javascript end-->
 
 </body>
+
 
 </html>
