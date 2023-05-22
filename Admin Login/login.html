@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>GLOBAL</span> EXCEL</h1>
+        <h3>Sign in</h3>
+        <div class="box">
+            <form action="" onsubmit="validateForm()" method="post">
+                <div>
+                    <label for="Email">
+                        <input type="email" name="Email" id="email" placeholder="Enter your email">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="Password">
+                        <input type="password" name="Password" id="password" placeholder="Enter your password">
+                    </label>
+                    <ion-icon name="eye-outline" id="eyeicon"></ion-icon>
+                </div>
+
+
+
+                <input class="btn" type="submit" value="Submit">
+            </form>
+            <div class="forgot">
+                <a href="/forgotpassword.html">Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        // -----password ------
+        const eyeicon = document.getElementById("eyeicon");
+        const password = document.getElementById("password");
+
+        eyeicon.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeicon.name = "eye-off-outline";
+            } else {
+                password.type = "password";
+                eyeicon.name = "eye-outline";
+            }
+        }
+
+    </script>
+
+
+</body>
+
+
+
+</html>
